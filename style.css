@@ -67,14 +67,21 @@ button{
 .members {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 30%;
+    grid-auto-columns: 40%;
     gap: 1%;
     background-color: #ffc400;
 
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+
+.members::-webkit-scrollbar {
+    display: none;
 }
 
 .members0 {
@@ -98,7 +105,26 @@ button{
 }
 
 .contactUs {
+    
     background-color: #00ff80;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.leftSection {
+    flex: 0 0 40%;
+    padding: 1rem;
+}
+
+.rightSection {
+    flex: 0 0 60%;
+    padding: 1rem;
 }
 
 .source {

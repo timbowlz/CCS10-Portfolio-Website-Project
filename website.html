@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Portfolio</title>
+    <link rel="icon" href="cat3.jfif">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,13 +26,13 @@
     </div>
 
     <!--good na yung layout(?)-->
-    <a name="aboutUs"><div class="webpage aboutUs"></a>
+    <a name="aboutUs"><section class="webpage aboutUs"></a>
         <h1>ABOUT US</h1>
         <p class="padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum repudiandae ducimus distinctio corrupti neque! Explicabo eius itaque, dignissimos ullam laudantium delectus ipsum quam placeat pariatur est id voluptate quia praesentium.</p>
-    </div>
+    </section>
 
     <!--flex display para sa horizontal scroll-->
-    <a name="members"><div class="webpage members"></a>
+    <a name="members"><section class="webpage members"></a>
         <div>
             <h1>MEMBERS</h1>
         </div>
@@ -44,25 +45,26 @@
         <div class="member3">
             TIMBOL
         </div>
-    </div>
+    </section>
 
     <!--flexbox display. div "contact us" on top, div "map" on the left, div "email form" on the right-->
-    <a name="contactUs"><div class="webpage contactUs"></a>
-        <div class="members0">
+    <a name="contactUs"><section class="webpage contactUs"></a>
+        <div>
             <h1>CONTACT US</h1>
         </div>
-        <div>
-            map
+        <div class="bottomSection">
+            <div class="leftSection">
+                map
+            </div>
+            <div class="rightSection">
+                email form
+            </div>
         </div>
-            email form
-        <div>
+    </section>
 
-        </div>
-    </div>
-
-    <a name="source"><div class="webpage source"></a>
+    <a name="source"><section class="webpage source"></a>
         <h1>SOURCE</h1>
-    </div>
+    </section>
 
     <script src="scrolling.js"></script>
 </body>
