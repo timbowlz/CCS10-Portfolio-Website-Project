@@ -1,0 +1,23 @@
+.wrap {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  cursor: grab;
+}
+.wrap::-webkit-scrollbar {
+  display: none;
+}
+.wrap > li {
+  flex: 0 0 auto;
+  width: 200px;
+  list-style: none;
+}
+.wrap > li > img {
+  width: 100%;
+}
